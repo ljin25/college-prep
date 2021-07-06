@@ -6,9 +6,11 @@ func main() {
 	
 //part 1: prints sum of all whole numbers 1 to n 
 
-	var n int8
+	fmt.Print(Input value here: )
 	
-	n = 10/*replace w value for n*/
+	var n int8
+	fmt.Scanln(&n)
+	
 	var sum = (n * (n + 1)) / 2
 	fmt.Println(sum)
 	
