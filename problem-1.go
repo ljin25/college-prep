@@ -12,7 +12,7 @@ func main() {
 	fmt.Scanln(&n)
 	
 	var sum = (n * (n + 1)) / 2
-	fmt.Println(sum)
+	fmt.Println("Answer:", sum)
 	
 }
 
