@@ -8,7 +8,7 @@ func main() {
 	
 	fmt.Print(Insert value here: )
 	
-	var n uint8
+	var n int
 	fmt.Scanln(&n)
 
 
@@ -21,6 +21,5 @@ func main() {
 		}
 	}
 
-fmt.Print
 fmt.Println("Answer:", sum)
 }
