@@ -5,43 +5,44 @@ package main
 
 import "fmt"
 
-var n int
+func sum(n int) uint16 {
 
+	var resultSum uint16 = 0
+	for i := 1; i <= n; i++ {
+		resultSum += uint16(i)
+	}
+	return resultSum
+}
 
+func product(n int) uint64 {
+
+	var resultProduct uint64 = 1
+	if n < 0 {
+
+	} else {
+		for i := 1; i <= n; i++ {
+			resultProduct *= uint64(i)
+		}
+	}
+	return resultProduct
+}
 
 func main() {
- 
 
-	sumN := 1
-	productN := 1
-	
-	for i := 1; i <= n; i++ {
-		sumN += i + 1
-		return sumN;
-	}
-	
-	 
-
-	for i := 1; i <= n; i++ {
-		productN *= (i + 1)
-		return productN;
-	}
-
-
+	var n int
 	fmt.Print("Insert value here: ")
 	fmt.Scanln(&n)
 	
-	fmt.Println("Sum (1) or Product (2)?")
 	var choose uint8
+	fmt.Println("Sum (1) or Product (2)?")
 	fmt.Scanln(&choose)
 	
 	if choose == 1 {
-		fmt.Println("Answer:", sumN)
+		fmt.Printf("Sum of all numbers from 1 to %d is %d", n, sum(n))
 	} else if choose == 2 {
-		fmt.Println("Answer:", productN)
+		fmt.Printf("Product of all numbers from 1 to %d (factorial) is %d", n, product(n))
+	} else {
+		fmt.Println("Please choose 1 for the sum or 2 for the product.")
+	}
 	
-
-
-}
-
 }
