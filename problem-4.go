@@ -18,7 +18,6 @@ func main() {
 	for i := n; i <= (n+80); i++ {
 		if leapYear(i) {
 			fmt.Println(i)
-		}
-		
+		}	
 	}
 }
