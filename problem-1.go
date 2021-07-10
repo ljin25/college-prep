@@ -1,5 +1,7 @@
-/*Write a program that asks the user for a number n and prints the sum of the numbers 1 to n. 
-Modify the previous program such that only multiples of three or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17.*/
+/*
+Write a program that asks the user for a number n and prints the sum of the numbers 1 to n. 
+Modify the previous program such that only multiples of three or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17.
+*/
 
 package main
 
@@ -16,7 +18,7 @@ func main() {
 	var sum = (n * (n + 1)) / 2
 	fmt.Println("Answer:", sum)
 
-	//part 2: sum of all multiples of 3 & 5 to n (x in this case)
+//part 2: sum of all multiples of 3 & 5 to n (x in this case)
 	threesAndFives := 0
 
 	fmt.Print("Insert value here: ")
