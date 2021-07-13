@@ -1,3 +1,5 @@
+// Write function that reverses a list, preferably in place.
+
 package main
 
 import (
