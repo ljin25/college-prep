@@ -12,7 +12,7 @@ func main() {
 
 	for i := 0; i < len(list); i++ {
 		if i == 0 { // As long as i == any value in 'list', the below line will print, otherwise nothing
-			fmt.Println("Element occurs in list")
+			fmt.Printf("The element, %d, occurs in list.", list[i]-1)
 		}
 	}
 
